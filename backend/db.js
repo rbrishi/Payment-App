@@ -1,5 +1,8 @@
 const mongoose = require("mongoose");
 
+mongoose.connect(
+  "mongodb+srv://brishabh100:Rishabh123@cluster0.wppzval.mongodb.net/PaymentApp"
+);
 // Create a Schema for Users
 const userSchema = new mongoose.Schema({
   username: {
