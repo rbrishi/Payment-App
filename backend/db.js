@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
-
 mongoose.connect(
-  "mongodb+srv://brishabh100:Rishabh123@cluster0.wppzval.mongodb.net/PaymentApp"
+  "mongodb+srv://brishabh100:Rishabh123@cluster0.wppzval.mongodb.net/paytm"
 );
-// Create a Schema for Users
+
+//create user Schema
 const userSchema = new mongoose.Schema({
   username: {
     type: String,
@@ -33,9 +33,9 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-// Create a model from the schema
+//Create Model
 const User = mongoose.model("User", userSchema);
-
+//export model
 module.exports = {
   User,
 };
